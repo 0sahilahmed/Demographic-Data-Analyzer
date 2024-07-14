@@ -1,3 +1,10 @@
+# download the dataset if it's not already available:
+import urllib.request
+
+url = 'http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data'
+filename = 'adult.data.csv'
+urllib.request.urlretrieve(url, filename)
+###################################################################################
 import pandas as pd
 
 def demographic_data_analyzer():
